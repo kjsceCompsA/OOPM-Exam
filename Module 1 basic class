@@ -1,0 +1,40 @@
+//Class 1
+public class Cars
+{
+    public int wheels;
+    public double milage;
+    //constructors
+    Cars()
+    {
+        this.wheels=-1;
+        this.milage=-1;
+    }
+    Cars(int wheels,double milage)//names can be different
+    {
+        this.wheels=wheels;
+        this.milage=milage;
+    }
+}
+
+//Class 2
+public class DisplayInfo extends Cars
+{
+    public static void main()
+    {
+    int wheels=4;
+    double milage = 20.5;
+    Cars car=new Cars();
+    System.out.println("Object initialize with default constructor");
+    car=new Cars(wheels,milage);
+    System.out.println("Number of wheels="+car.wheels);
+    System.out.println("Milage="+car.milage);
+    }
+}
+
+/*
+Output
+Object initialize with default constructor
+Number of wheels=4
+Milage=20.5
+
+*/
