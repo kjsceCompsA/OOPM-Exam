@@ -1,0 +1,82 @@
+// not all function are there
+
+import java.lang.*;
+public class StringDemo
+{
+   public static void main(String args[]){
+      
+      //Array to string convertion 
+      char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.'};
+      String helloString = new String(helloArray);  
+      System.out.println( helloString );
+      
+      System.out.println("\n\n\n\n");
+      
+      //String length
+      String palindrome = "Dot saw I was Tod";
+      int len = palindrome.length();
+      System.out.println( "String Length is : " + len );
+      
+      System.out.println("\n\n\n\n");
+      
+      //charAt 
+      String s = "Strings are immutable";
+      char result = s.charAt(8);
+      System.out.println(result);
+      
+      System.out.println("\n\n\n\n");
+      
+      
+      //String compare to
+      String str1 = "Strings are immutable";
+	  String str2 = "Strings are immutable";
+      String str3 = "Integers are not immutable";
+
+      int resul = str1.compareTo( str2 );
+      System.out.println(result);
+	  
+      resul = str2.compareTo( str3 );
+      System.out.println(result);
+	 
+      resul = str3.compareTo( str1 );
+      System.out.println(result);
+    
+      
+      System.out.println("\n\n\n\n");
+      
+      
+      
+      //equals function
+      
+      String Str1 = new String("This is really not immutable!!");
+      String Str2 = Str1;
+      String Str3 = new String("This is really not immutable!!");
+      boolean retVal;
+
+      retVal = Str1.equals( Str2 );
+      System.out.println("Returned Value = " + retVal );
+
+      retVal = Str1.equals( Str3 );
+      System.out.println("Returned Value = " + retVal );
+      
+      
+      System.out.println("\n\n\n\n");
+      
+      //Index of function
+       String Str = new String("Hi there boys and girls");
+      String SubStr1 = new String("Tutorials");
+      String SubStr2 = new String("Sutorials");
+
+      System.out.print("Found Index :" );
+      System.out.println(Str.indexOf( 'o' ));
+      System.out.print("Found Index :" );
+      System.out.println(Str.indexOf( 'o', 5 ));
+      System.out.print("Found Index :" );
+      System.out.println( Str.indexOf( SubStr1 ));
+      System.out.print("Found Index :" );
+      System.out.println( Str.indexOf( SubStr1, 15 ));
+      System.out.print("Found Index :" );
+      System.out.println(Str.indexOf( SubStr2 ));
+      
+   }
+}
