@@ -1,0 +1,36 @@
+//i d array 2 d array , for each loop 
+
+
+import java.util.*;
+public class array
+{
+  public static void main(String args[])
+  {
+    System.out.println("Basic array");
+    int a[]=new int[5];
+    int b[];
+    b=new int[10];
+    int c[]={1,2,3,4};
+    int d[][]= new int[4][4];
+    for(int i: c)
+    {
+        System.out.println("i val " +i);
+        System.out.println("Array val "+c[i-1]);
+    }
+  }
+}
+/*
+OUTPUT
+
+Basic array
+i val 1
+Array val 1
+i val 2
+Array val 2
+i val 3
+Array val 3
+i val 4
+Array val 4
+
+
+*/
